@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  width: 350px;
+  height: px;
+  margin-top: 20px;
+  background-color: #303030;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.iphone-x-display {
+  position: relative;
+  width: 100%;
+  height: 110px;
+  border-radius: 16px;
+  background-color: #000;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 16px;
+}
+
+.display-notch {
+  width: 40px;
+  height: 12px;
+  background-color: #000;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+.display {
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px; /* Aumentar o espaço entre os botões */
+}
+
+button {
+  font-size: 28px;
+  padding: 24px;
+  background-color: #5c5c5c;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number.zero {
+  grid-column: span 2;
+  border-radius: 16px;
+}
+
+.operator,
+.equal,
+.delete {
+  background-color: #f5890d;
+}
+
+.number,
+.operator,
+.equal,
+.delete {
+  border: none;
+  color: #000;
+}
+
+.delete svg {
+  fill: #000;
+}
+
+.delete-character {
+  grid-column: 4;
+}
+
+.number:hover,
+.operator:hover,
+.equal:hover,
+.delete:hover {
+  background-color: #777;
+}
+
+.number:active,
+.operator:active,
+.equal:active,
+.delete:active {
+  background-color: #555;
+}
+
+.number:focus,
+.operator:focus,
+.equal:focus,
+.delete:focus {
+  outline: none;
+}
